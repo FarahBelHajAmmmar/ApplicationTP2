@@ -1,0 +1,37 @@
+﻿@model IList<Movie>
+
+<a asp-controller="Movie" asp-action="Create" class="btn btn-primary">Ajouter un nouveau film</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Nom du film
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>
+                    @obj.Id
+                </td>
+                <td>
+                    @obj.Name
+                </td>
+                <td>
+                    <a asp-controller="Movie" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-info">Éditer</a>
+                </td>
+                <td>
+                    <a asp-controller="Movie" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

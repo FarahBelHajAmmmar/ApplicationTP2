@@ -1,0 +1,15 @@
+﻿@model Movie
+
+<div style="text-align: center;">
+    <h1>Editer un  film</h1>
+</div>
+
+<div style="text-align: center;">
+    <form method="Post">
+        <label for="Name">Nom du film:</label><br>
+        <input type="text" id="Name" name="Name" value="@Model.Name"><br><br>
+        <button type="submit" style="padding: 8px 12px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Editer</button>
+    </form>
+
+    <a href="@Url.Action("Index", "Movie")" style="text-decoration: none; color: #007bff; margin-top: 10px; display: block;">Retour à la liste des films</a>
+</div>

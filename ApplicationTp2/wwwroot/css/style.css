@@ -1,0 +1,64 @@
+﻿/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Style pour la table */
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .movie-table th,
+    .movie-table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .movie-table th {
+        background-color: #f2f2f2;
+    }
+
+/* Style pour les boutons */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.add-btn {
+    background-color: #007bff;
+}
+
+    .add-btn:hover {
+        background-color: #0056b3;
+    }
+
+.edit-btn {
+    background-color: #17a2b8;
+}
+
+    .edit-btn:hover {
+        background-color: #117a8b;
+    }
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+    .delete-btn:hover {
+        background-color: #c82333;
+    }
